@@ -1,1 +1,5 @@
-# FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025
+# Taller de diseño digital: Proyecto
+1. Juan Pablo Rodriguez Cano
+2. Fabricio González Cerdas
+3. Jafet Jose Diaz Morales
+4. Jian Yong Zheng Wu
