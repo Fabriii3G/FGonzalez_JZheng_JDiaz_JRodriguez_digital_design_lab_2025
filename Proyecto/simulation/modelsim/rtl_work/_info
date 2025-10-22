@@ -1,0 +1,453 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1761104581
+!i10b 1
+!s100 NM:l`m9PfRg[F]Agjdn6H1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGZ>C2^MH^nlBGPl]G6@<81
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1761098226
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/adder.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/adder.sv
+!i122 6
+L0 1 6
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1761104581.000000
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/adder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto
+Z9 tCvgOpt 0
+valu
+R1
+Z10 !s110 1761104582
+!i10b 1
+!s100 8]agX=b64;QLb`WSVFh4;2
+R3
+I[z>H;E]EO_BdlQD6;JzGa1
+R4
+S1
+R0
+w1761098875
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/alu.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/alu.sv
+!i122 13
+L0 1 59
+R5
+r1
+!s85 0
+31
+Z11 !s108 1761104582.000000
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/alu.sv|
+!i113 1
+R7
+R8
+R9
+varm
+R1
+Z12 !s110 1761104580
+!i10b 1
+!s100 dP?ETbbJd<6BlJ3P0S=U61
+R3
+IhkFCVJCG_[dl1D1Bc`aR`3
+R4
+S1
+R0
+w1761104570
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/arm.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/arm.sv
+!i122 0
+Z13 L0 1 23
+R5
+r1
+!s85 0
+31
+Z14 !s108 1761104580.000000
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/arm.sv|
+!i113 1
+R7
+R8
+R9
+vcondcheck
+R1
+R2
+!i10b 1
+!s100 5BU^RJ5QH9eUGXb[OBNR;0
+R3
+I`GSF[C6UWRmLCeY?`GS0O2
+R4
+S1
+R0
+Z15 w1761098071
+Z16 8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv
+Z17 FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv
+!i122 3
+L0 35 32
+R5
+r1
+!s85 0
+31
+R6
+Z18 !s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv|
+Z19 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv|
+!i113 1
+R7
+R8
+R9
+vcondlogic
+R1
+R2
+!i10b 1
+!s100 EF6DFLZ_C90N<`M9m1Gb@0
+R3
+I4dKFjAUCnE]Eg_lYcGBEH3
+R4
+S1
+R0
+R15
+R16
+R17
+!i122 3
+L0 1 32
+R5
+r1
+!s85 0
+31
+R6
+R18
+R19
+!i113 1
+R7
+R8
+R9
+vcontroller
+R1
+R12
+!i10b 1
+!s100 <JefIM>GmL6`X]:mRYFf@0
+R3
+ISliFdVKUj;m[QA>7FHDGE2
+R4
+S1
+R0
+w1761098020
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/controller.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/controller.sv
+!i122 1
+L0 1 22
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/controller.sv|
+!i113 1
+R7
+R8
+R9
+vdatapath
+R1
+R2
+!i10b 1
+!s100 @zJA@_R@ghmVZER<Z_khj2
+R3
+IPID9fmh]kO9b1?9Ah^=Ee1
+R4
+S1
+R0
+Z20 w1761098898
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/datapath.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/datapath.sv
+!i122 4
+L0 1 44
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/datapath.sv|
+!i113 1
+R7
+R8
+R9
+vdecoder
+R1
+R2
+!i10b 1
+!s100 22SUhc__9U`X;i<_V2Scd3
+R3
+I]TZBFFK^zCcA=V>LhTaUI3
+R4
+S1
+R0
+w1761098016
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/decoder.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/decoder.sv
+!i122 2
+L0 1 57
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/decoder.sv|
+!i113 1
+R7
+R8
+R9
+vdmem
+R1
+R10
+!i10b 1
+!s100 IT2h?E=fhYH;WGPm>Ia^D3
+R3
+I;?QfIzz1PC936ezEUX79z3
+R4
+S1
+R0
+w1761098729
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/dmem.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/dmem.sv
+!i122 12
+L0 1 15
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/dmem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/dmem.sv|
+!i113 1
+R7
+R8
+R9
+vextend
+R1
+R2
+!i10b 1
+!s100 nhcFhehH][c=YT>6Y_7U73
+R3
+I6NzAQ5F^]1H3]clf9FO:<0
+R4
+S1
+R0
+w1761098276
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/extend.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/extend.sv
+!i122 7
+L0 1 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/extend.sv|
+!i113 1
+R7
+R8
+R9
+vflopenr
+R1
+R2
+!i10b 1
+!s100 HZ9ECmOT3CX7NLz@SzQg^0
+R3
+I^B[m4[RR6lFga=HFRbV^02
+R4
+S1
+R0
+w1761098421
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/flopenr.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/flopenr.sv
+!i122 9
+Z21 L0 1 13
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/flopenr.sv|
+!i113 1
+R7
+R8
+R9
+vflopr
+R1
+R2
+!i10b 1
+!s100 cJ9O[PbQo=CV`Od:0cZRn0
+R3
+IFF@nff8Wl<^jSOMg<HXbM3
+R4
+S1
+R0
+R20
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/flopr.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/flopr.sv
+!i122 8
+R21
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/flopr.sv|
+!i113 1
+R7
+R8
+R9
+vimem
+R1
+R10
+!i10b 1
+!s100 `_:0zmBY=ZQ4T<I1f2i362
+R3
+I8[K3D73b<We?kUSBRnn:40
+R4
+S1
+R0
+w1761101692
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/imem.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/imem.sv
+!i122 14
+R21
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/imem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/imem.sv|
+!i113 1
+R7
+R8
+R9
+vmux2
+R1
+R10
+!i10b 1
+!s100 0b881d1DbPBVgNzBo98Zc3
+R3
+InWIU`BQW`cbS8NbeIA2>_0
+R4
+S1
+R0
+w1761098474
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/mux2.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/mux2.sv
+!i122 10
+L0 1 9
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/mux2.sv|
+!i113 1
+R7
+R8
+R9
+vregfile
+R1
+R2
+!i10b 1
+!s100 ><FXzb:SV3H?fe2CiiG]f1
+R3
+IH44lo38XgSaEi>YhDfUQK0
+R4
+S1
+R0
+w1761098158
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/regfile.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/regfile.sv
+!i122 5
+R13
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/regfile.sv|
+!i113 1
+R7
+R8
+R9
+vtestbench
+R1
+R10
+!i10b 1
+!s100 oOl^[7NjkCB7P2>85aRJV1
+R3
+I[EEz=1S`RSMbMlToQbN`12
+R4
+S1
+R0
+w1761098899
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/testbench.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/testbench.sv
+!i122 15
+L0 1 43
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/testbench.sv|
+!i113 1
+R7
+R8
+R9
+vtop
+R1
+R10
+!i10b 1
+!s100 4H<=YWHl5ZfEALKTTSoHN0
+R3
+I7OC;bcfaaS<<B0cc=nAAG2
+R4
+S1
+R0
+w1761098709
+8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/top.sv
+FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/top.sv
+!i122 11
+L0 1 14
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/top.sv|
+!i113 1
+R7
+R8
+R9
