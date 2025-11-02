@@ -38,7 +38,7 @@
 
 
 set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CGXFC7C7F23C8
+set_global_assignment -name DEVICE 5CSXFC6D6F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:33:05  OCTOBER 21, 2025"
@@ -47,23 +47,6 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name SYSTEMVERILOG_FILE arm.sv
-set_global_assignment -name SYSTEMVERILOG_FILE controller.sv
-set_global_assignment -name SYSTEMVERILOG_FILE decoder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE condlogic.sv
-set_global_assignment -name SYSTEMVERILOG_FILE datapath.sv
-set_global_assignment -name SYSTEMVERILOG_FILE regfile.sv
-set_global_assignment -name SYSTEMVERILOG_FILE adder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE extend.sv
-set_global_assignment -name SYSTEMVERILOG_FILE flopr.sv
-set_global_assignment -name SYSTEMVERILOG_FILE flopenr.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mux2.sv
-set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
-set_global_assignment -name SYSTEMVERILOG_FILE top.sv
-set_global_assignment -name SYSTEMVERILOG_FILE dmem.sv
-set_global_assignment -name SYSTEMVERILOG_FILE imem.sv
-set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
-set_global_assignment -name LICENSE_FILE memfile.dat
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -82,4 +65,23 @@ set_global_assignment -name EDA_TEST_BENCH_NAME testbench -section_id eda_simula
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE testbench.sv -section_id testbench
+set_global_assignment -name BOARD "Cyclone V SoC Development Kit"
+set_global_assignment -name LICENSE_FILE simulation/modelsim/memfile.dat
+set_global_assignment -name SYSTEMVERILOG_FILE arm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE condlogic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath.sv
+set_global_assignment -name SYSTEMVERILOG_FILE regfile.sv
+set_global_assignment -name SYSTEMVERILOG_FILE adder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE extend.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flopr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flopenr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
+set_global_assignment -name SYSTEMVERILOG_FILE top.sv
+set_global_assignment -name SYSTEMVERILOG_FILE dmem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE imem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
+set_global_assignment -name LICENSE_FILE memfile.dat
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
