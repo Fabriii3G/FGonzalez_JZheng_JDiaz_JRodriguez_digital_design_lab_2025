@@ -11,7 +11,7 @@ cModel Technology
 Z0 dD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1762449133
+Z2 !s110 1762449331
 !i10b 1
 !s100 NM:l`m9PfRg[F]Agjdn6H1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1762449133.000000
+Z6 !s108 1762449331.000000
 !s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/adder.sv|
 !i113 1
@@ -37,7 +37,7 @@ Z8 !s92 -sv -work work +incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodr
 Z9 tCvgOpt 0
 valu
 R1
-Z10 !s110 1762449134
+Z10 !s110 1762449332
 !i10b 1
 !s100 8]agX=b64;QLb`WSVFh4;2
 R3
@@ -54,7 +54,7 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1762449134.000000
+Z11 !s108 1762449332.000000
 !s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/alu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/alu.sv|
 !i113 1
@@ -63,7 +63,7 @@ R8
 R9
 varm
 R1
-Z12 !s110 1762449132
+Z12 !s110 1762449330
 !i10b 1
 !s100 dP?ETbbJd<6BlJ3P0S=U61
 R3
@@ -80,7 +80,7 @@ R5
 r1
 !s85 0
 31
-!s108 1762449131.000000
+Z14 !s108 1762449330.000000
 !s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/arm.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/arm.sv|
 !i113 1
@@ -97,9 +97,9 @@ I`GSF[C6UWRmLCeY?`GS0O2
 R4
 S1
 R0
-Z14 w1761098071
-Z15 8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv
-Z16 FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv
+Z15 w1761098071
+Z16 8D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv
+Z17 FD:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv
 !i122 3
 L0 35 32
 R5
@@ -107,8 +107,8 @@ r1
 !s85 0
 31
 R6
-Z17 !s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv|
-Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv|
+Z18 !s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv|
+Z19 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/condlogic.sv|
 !i113 1
 R7
 R8
@@ -123,9 +123,9 @@ I4dKFjAUCnE]Eg_lYcGBEH3
 R4
 S1
 R0
-R14
 R15
 R16
+R17
 !i122 3
 L0 1 32
 R5
@@ -133,8 +133,8 @@ r1
 !s85 0
 31
 R6
-R17
 R18
+R19
 !i113 1
 R7
 R8
@@ -158,7 +158,7 @@ R5
 r1
 !s85 0
 31
-Z19 !s108 1762449132.000000
+R14
 !s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/controller.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/controller.sv|
 !i113 1
@@ -210,7 +210,7 @@ R5
 r1
 !s85 0
 31
-R19
+R14
 !s107 D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/decoder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto|D:/ARMCPU_Dig_Design/FGonzalez_JZheng_JDiaz_JRodriguez_digital_design_lab_2025/Proyecto/decoder.sv|
 !i113 1
@@ -401,7 +401,7 @@ R8
 R9
 vtestbench
 R1
-!s110 1762449135
+R10
 !i10b 1
 !s100 ]?0k3FMPn;KjVIlMS?m0_2
 R3
