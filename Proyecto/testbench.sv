@@ -52,7 +52,7 @@ module testbench();
                 
                 if (branch_count >= 3) begin
                     $display("===========================================");
-                    $display("Test completed after 3 branch iterations");
+                    $display("Test completed after 3 jump iterations");
                     $display("Arithmetic: %0d operations executed", arithmetic_count);
                     $display("Store: %0d stores executed", store_count);
                     $display("Jump: Working correctly");
