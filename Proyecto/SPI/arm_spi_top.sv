@@ -38,8 +38,8 @@ module arm_spi_top (
     
     spi_arm_interface #(
         .LOOSE_HANDSHAKE(1'b1),
-        .ACK_SWAP_NIBBLES(1'b0),     // Cambiado a 0
-        .RES_SWAP_NIBBLES(1'b0)      // Cambiado a 0
+        .ACK_SWAP_NIBBLES(1'b0),     // ACK: 0xAN y 0xBN (nibble alto = A/B)
+        .RES_SWAP_NIBBLES(1'b0)      // RES: 0x0R (nibble alto = 0)
     ) spi_interface (
         .clk(clk),
         .rst_n(rst_n),
@@ -62,70 +62,65 @@ module arm_spi_top (
     );
 
     // ========================================================================
-    // ARM PROCESSOR
+    // ALU DIRECTA - Suma de operandos SPI
     // ========================================================================
-    logic [31:0] PC;
-    logic [31:0] Instr;
-    logic        MemWrite;
-    logic [31:0] ALUResult;
-    logic [31:0] WriteData;
-    logic [31:0] ReadData;
+    // Usamos la ALU del procesador ARM directamente para sumar A + B
     
-    arm arm_core (
-        .clk(clk),
-        .reset(~rst_n),  // ARM usa reset activo alto
-        .PC(PC),
-        .Instr(Instr),
-        .MemWrite(MemWrite),
-        .ALUResult(ALUResult),
-        .WriteData(WriteData),
-        .ReadData(ReadData)
-    );
-
-    // ========================================================================
-    // INSTRUCTION MEMORY
-    // ========================================================================
-    imem instruction_memory (
-        .a(PC),
-        .rd(Instr)
-    );
-
-    // ========================================================================
-    // DATA MEMORY CON OPERANDOS SPI
-    // ========================================================================
-    // La memoria de datos se modifica para que ciertas direcciones
-    // contengan los operandos recibidos por SPI
+    logic [31:0] alu_src1, alu_src2;
+    logic [31:0] alu_result;
+    logic [3:0]  alu_flags;
+    logic [1:0]  alu_control;
     
-    logic [31:0] dmem_read_data;
+    // Extender operandos de 4 bits a 32 bits
+    assign alu_src1 = {28'h0, spi_operand_a};
+    assign alu_src2 = {28'h0, spi_operand_b};
+    assign alu_control = 2'b00;  // 00 = ADD (según el módulo alu.sv)
     
-    // Direcciones especiales para operandos SPI:
-    //   0x00: Operando A (extendido a 32 bits)
-    //   0x04: Operando B (extendido a 32 bits)
-    //   0x08: Señal de validación (1 si hay operandos nuevos)
-    
-    wire is_operand_a_addr = (ALUResult == 32'h00000000);
-    wire is_operand_b_addr = (ALUResult == 32'h00000004);
-    wire is_valid_addr     = (ALUResult == 32'h00000008);
-    
-    // Memoria de datos normal
-    dmem data_memory (
-        .clk(clk),
-        .we(MemWrite & ~is_operand_a_addr & ~is_operand_b_addr & ~is_valid_addr),
-        .a(ALUResult),
-        .wd(WriteData),
-        .rd(dmem_read_data)
+    // Instanciar la ALU del procesador ARM
+    alu #(
+        .BusWidth(32)
+    ) alu_instance (
+        .i_ALU_Src1(alu_src1),
+        .i_ALU_Src2(alu_src2),
+        .i_ALU_Control(alu_control),
+        .o_ALU_Result(alu_result),
+        .o_ALU_Flags(alu_flags)
     );
     
-    // Multiplexor para lectura de datos especiales
-    assign ReadData = ({32{is_operand_a_addr}} & {28'h0, spi_operand_a}) |
-                     ({32{is_operand_b_addr}} & {28'h0, spi_operand_b}) |
-                     ({32{is_valid_addr}}     & {31'h0, operands_valid}) |
-                     ({32{~is_operand_a_addr & ~is_operand_b_addr & ~is_valid_addr}} & dmem_read_data);
-
     // ========================================================================
-    // RESULTADO AL SPI
+    // CAPTURA DE RESULTADO CON DELAY
     // ========================================================================
-    // Enviamos el resultado de la ALU (4 bits bajos) de vuelta por SPI
-    assign arm_result_to_spi = ALUResult;
+    // La ALU es combinacional, su resultado está disponible inmediatamente
+    // Registramos los operandos primero, luego capturamos el resultado
+    
+    logic [3:0] operand_a_reg, operand_b_reg;
+    logic [31:0] result_reg;
+    logic [1:0] capture_delay;
+    
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (~rst_n) begin
+            operand_a_reg <= 4'h0;
+            operand_b_reg <= 4'h0;
+            result_reg <= 32'h0;
+            capture_delay <= 2'b00;
+        end else begin
+            // Capturar operandos cuando son válidos
+            if (operands_valid) begin
+                operand_a_reg <= spi_operand_a;
+                operand_b_reg <= spi_operand_b;
+                capture_delay <= 2'b11;  // Iniciar contador de delay
+            end else if (capture_delay != 2'b00) begin
+                capture_delay <= capture_delay - 1;
+            end
+            
+            // Capturar resultado después del delay (cuando counter llega a 1)
+            if (capture_delay == 2'b01) begin
+                result_reg <= alu_result;
+            end
+        end
+    end
+    
+    // Enviar resultado al SPI
+    assign arm_result_to_spi = result_reg;
 
 endmodule

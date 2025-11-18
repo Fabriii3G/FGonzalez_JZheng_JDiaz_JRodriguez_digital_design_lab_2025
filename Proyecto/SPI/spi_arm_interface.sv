@@ -183,11 +183,13 @@ module spi_arm_interface #(
     // ========================================================================
     logic [3:0] result_reg;
     
+    // Capturar el resultado continuamente cuando llega del ARM
+    // No esperar al comando de lectura para capturarlo
     always_ff @(posedge clk or negedge rst_n) begin
         if (~rst_n)
             result_reg <= 4'h0;
-        else if (byte_complete && is_cmd_result)
-            result_reg <= arm_result[3:0];
+        else
+            result_reg <= arm_result[3:0];  // Captura continua del resultado
     end
 
     // ========================================================================
@@ -240,8 +242,8 @@ module spi_arm_interface #(
     end
 
     // ========================================================================
-    // Debug output
+    // Debug output - Mostrar resultado de la suma en los LEDs
     // ========================================================================
-    assign debug_leds = reg_b;
+    assign debug_leds = result_reg;
 
 endmodule
